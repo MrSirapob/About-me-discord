@@ -1,87 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>G3nz</title>
-  <link rel="stylesheet" href="style.css">
+  <title>G3nz — Gaming Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600&family=Bebas+Neue&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <!-- Nav -->
+
+  <!-- NAV -->
   <nav>
-    <div>Gen</div>
-    <div class="nav-list">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Game</a>
-    </div>
+    <div class="nav-logo">G3NZ</div>
+    <ul class="nav-links">
+      <li><a href="#about">เกี่ยวกับ</a></li>
+      <li><a href="#playing">เกมที่เล่นช่วงนี้</a></li>
+      <li><a href="#played">เกมที่เคยเล่น</a></li>
+      <li><a href="#recommend">เกมที่อยากแนะนำ</a></li>
+      <li><a href="#valorant">Valorant</a></li>
+    </ul>
   </nav>
 
-  <!-- Hero -->
-  <section class="Hero">
-    <div>
-      <h1>GEN</h1>
-      <p>Web Dev & Trader | ICT</p>
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-bg"></div>
+    <div class="hero-line"></div>
+    <div class="hero-content">
+      <p class="hero-tag">// Profile</p>
+      <h1 class="hero-name">G<span>3</span>NZ</h1>
+      <p
+        style="font-family:'Bebas Neue',sans-serif;letter-spacing:4px;font-size:1.2rem;color:var(--text-muted);margin-top:0.5rem;">
+        Web Dev & Trader | ICT</p>
+      <p class="hero-desc">
+        สวัสดีครับ ชื่อ "เก็น" นะครับ<br>
+        ขอบคุณที่เข้ามารับชม Web ผมนะครับ
+      </p>
+      <a href="https://x.com/MrG3nz" target="_blank" class="hero-x">
+        <span class="x-icon">𝕏</span>
+        ติดตามบน X
+      </a>
+      <a href="https://discordapp.com/users/303430963319275520" target="_blank" class="hero-x">
+        <span class="x-icon">Discord</span>
+      </a>
     </div>
-
-    <div>
-      <img src="images/Profile.png" alt="Profile">
-    </div>
-  </section>
-
-  <!-- About -->
-  <section>
-    <h2>Aboue Me</h2>
-    <div>
-      <p>ชื่อ: เก็น</p>
-      <p>อายุ: ไม่บอก 😎</p>
-      <br>
-      <p>ชอบเล่นเกม FPS แนว competitive ชอบกิน ชอบเขียนเว็บ</p>
-    </div>
-  </section>
-
-  <!-- Currently Playing -->
-  <section>
-    <h2>Currently Playing</h2>
-    <div>
-      <img src="" alt=""><p>Valorant</p>
-      <p>เล่นบ่อยสุด</p>
-    </div>
-
-    <div>
-      <img src="" alt=""><p>Other Game</p>
-      <p>Casual</p>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-arrow"></div>
     </div>
   </section>
 
-  <!-- Games I've Played จะทำแบบกดคลิกเพื่เปิดป็อปอัพดูรายละเอียดเพิ่มเติม --> 
-  <section>
-    <h2>Games I've Played</h2>
-    <div>RE4</div>
-    <div>Sekiro</div>
-    <div>Elden rings</div>
-    <div>Black Myth: Wukong</div>
+  <div class="divider"></div>
+
+  <!-- PLAYING NOW -->
+  <section class="playing-now" id="playing">
+    <div class="container">
+      <p class="section-label">// Currently Active</p>
+      <h2 class="section-title">เกมที่เล่นช่วงนี้</h2>
+      <div class="playing-grid">
+
+        <div class="game-card">
+          <div class="live-badge">MAIN</div>
+          <img src="assets/images/Valorant.png" alt="" class="game-logo">
+          <div class="game-info">
+            <h3>VALORANT</h3>
+            <p>5v5 Tactical Shooter — เป็นเกมหลักที่เล่นบ่อยมาก ๆ</p>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <img src="assets/images/Talesrunner.png" alt="" class="game-logo">
+          <div class="game-info">
+            <h3>Talesrunner</h3>
+            <p>เป็นเกมที่วิ่งแข่งกันสนุกมาก - แต่นาน ๆ ทีจะเข้าไปเล่น</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
-  <!-- Recommended Games จะทำแบบกดคลิกเพื่เปิดป็อปอัพดูรายละเอียดเพิ่มเติม -->
-  <section>
-    <h2>Recommended Games</h2>
-    <div>game1</div>
-    <div>game2</div>
+  <div class="divider"></div>
+
+  <!-- PLAYED -->
+  <section id="played">
+    <div class="container">
+      <p class="section-label">// Game History</p>
+      <h2 class="section-title">เกมที่เล่นไปแล้ว</h2>
+      <div class="game-grid" id="played-grid"></div>
+    </div>
   </section>
 
-  <!-- Valorant ทำหน้าสำหรับ Valorant -->
-  <section>
-    <nav>
-      
-    </nav>
+  <div class="divider"></div>
+
+  <!-- RECOMMEND -->
+  <section style="background:var(--bg2);" id="recommend">
+    <div class="container">
+      <p class="section-label">// Recommendations</p>
+      <h2 class="section-title">เกมที่อยากแนะนำ</h2>
+      <div class="game-grid" id="rec-grid"></div>
+    </div>
   </section>
 
-  <!-- Contact -->
+  <div class="divider"></div>
+
+  <!-- VALORANT -->
+  <section id="valorant">
+    <div class="val-bg-geo"></div>
+    <div class="container" style="position:relative;">
+      <p class="section-label">// Competitive Stats</p>
+      <h2 class="section-title" style="color:var(--red);">VALORANT</h2>
+
+      <div class="val-grid">
+        <!-- RANK -->
+        <div class="val-card">
+          <div class="val-card-label">Current Rank</div>
+          <div class="rank-display">
+            <span class="rank-icon">💎</span>
+            <div>
+              <div class="rank-name">Diamond 1</div>
+              <div class="rank-sub">RR: 12</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="val-card">
+          <div class="val-card-label">Peak Rank</div>
+          <div class="rank-display">
+            <span class="rank-icon">🏆</span>
+            <div>
+              <div class="rank-name">Immortal 1</div>
+              <div class="rank-sub">All Time Peak</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AGENT -->
+        <div class="val-card">
+          <div class="val-card-label">Main Agent</div>
+          <div class="agent-display">
+            <span class="agent-icon">🔫</span>
+            <div>
+              <div class="agent-name">Jett</div>
+              <div class="agent-role">Duelist</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="val-card">
+          <div class="val-card-label">Main Role</div>
+          <div class="agent-display">
+            <span class="agent-icon">⚡</span>
+            <div>
+              <div class="agent-name">Duelist</div>
+              <div class="agent-role">Entry Fragger</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATS -->
+      <div class="stat-grid">
+        <div class="stat-box">
+          <span class="stat-val">1.24</span>
+          <span class="stat-label">K / D</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-val">54%</span>
+          <span class="stat-label">Win Rate</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-val">22%</span>
+          <span class="stat-label">HS%</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-val">218</span>
+          <span class="stat-label">ACS</span>
+        </div>
+      </div>
+
+      <a href="https://tracker.gg/valorant/profile/riot/G3nz%232003/overview" target="_blank" class="tracker-btn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z" />
+        </svg>
+        ดู Match History — G3nz#2003
+      </a>
+    </div>
+  </section>
+
+
+
   <footer>
-    <h2>Contact</h2>
-    <a href="#">X</a>
-    <a href="#">Discord</a>
+    <div>G3NZ • Gaming Profile • Made with ❤️ and way too many hours ingame</div>
   </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon" id="modal-icon">🎮</div>
+        <div>
+          <div class="modal-title" id="modal-title">Game Title</div>
+          <div class="modal-type" id="modal-type">// Played</div>
+        </div>
+      </div>
+      <div class="modal-body" id="modal-body">description here</div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
