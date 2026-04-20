@@ -32,12 +32,14 @@ A dedicated section for Valorant, where I showcase my in-game profile.
 
 ## 📫 Contact
 
-* X (Twitter): your-link
+* X (Twitter): https://x.com/MrG3nz
+* Discord: https://discordapp.com/users/303430963319275520
 
 ## 🛠️ Built With
 
 * HTML
 * CSS
+* JS
 
 ---
 
